@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HomeController {
     
-    @ResponseBody//tells the controller to serialize the object into JSON and send it back to the HttpResponse object
-    @RequestMapping
-    public String showMessage(){
-        return "Hello from Spring Boot";
-    }
+//    @ResponseBody//tells the controller to serialize the object into JSON and send it back to the HttpResponse object
+//    @RequestMapping
+//    public String showMessage(){
+//        return "Hello from Spring Boot";
+//    }
     
-    @RequestMapping("/home")
+    @RequestMapping("/")
     public String showHome(){
         return "home";
     }
